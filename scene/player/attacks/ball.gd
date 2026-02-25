@@ -20,4 +20,6 @@ func _on_body_entered(body):
 		return
 	if body.has_method("take_damage"):
 		body.take_damage(1)
+	if body.has_method("knockback"):
+		body.knockback(direction, SPEED)
 	queue_free()

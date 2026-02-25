@@ -1,12 +1,26 @@
 [gd_scene format=3 uid="uid://bscn7k48jhs4l"]
 
 [ext_resource type="PackedScene" uid="uid://d3dg0yavn7oq4" path="res://scene/player/ghosty.tscn" id="1_pjass"]
+[ext_resource type="Script" uid="uid://qxufxem0ovhx" path="res://scene/world.gd" id="1_w4qq1"]
 [ext_resource type="PackedScene" uid="uid://8yfhpe6deeky" path="res://scene/enemy/bip.tscn" id="2_txmk2"]
 
 [node name="World" type="Node2D" unique_id=1008311652]
+script = ExtResource("1_w4qq1")
 
 [node name="Bip" parent="." unique_id=1527025703 instance=ExtResource("2_txmk2")]
 position = Vector2(698, 223)
+
+[node name="Bip2" parent="." unique_id=1627035801 instance=ExtResource("2_txmk2")]
+position = Vector2(200, 300)
+
+[node name="Bip3" parent="." unique_id=1727045802 instance=ExtResource("2_txmk2")]
+position = Vector2(400, 420)
+
+[node name="Bip4" parent="." unique_id=1827055803 instance=ExtResource("2_txmk2")]
+position = Vector2(850, 380)
+
+[node name="Bip5" parent="." unique_id=1927065804 instance=ExtResource("2_txmk2")]
+position = Vector2(1050, 200)
 
 [node name="Ghosty" parent="." unique_id=1566362811 instance=ExtResource("1_pjass")]
 position = Vector2(505, 244)

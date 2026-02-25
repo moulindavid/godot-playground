@@ -4,7 +4,7 @@ class_name Ghosty
 
 const SPEED = 300.0
 const ATTACK_DAMAGE = 1
-const Ball = preload("res://scene/ball.tscn")
+const Ball = preload("res://scene/player/attacks/ball.tscn")
 
 var is_attacking = false
 var hit_bodies = []

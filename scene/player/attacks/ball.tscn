@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cx7bqp2mq3n8t"]
+
+[ext_resource type="Script" uid="uid://ckvtu6rw0man1" path="res://scene/player/attacks/ball.gd" id="1_ball"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ball"]
+radius = 5.0
+
+[node name="Ball" type="Area2D" unique_id=605821130]
+script = ExtResource("1_ball")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1931880577]
+shape = SubResource("CircleShape2D_ball")
