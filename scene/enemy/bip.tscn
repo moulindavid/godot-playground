@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://8yfhpe6deeky"]
+
+[ext_resource type="Texture2D" uid="uid://cxq5jrihm86y1" path="res://assets/bip.png" id="1_582ms"]
+[ext_resource type="Script" uid="uid://dhgyg0n6hd6av" path="res://scene/enemy/bip.gd" id="1_bip"]
+[ext_resource type="Script" uid="uid://dnymhrkh8kytr" path="res://scene/enemy/bip_hp_bar.gd" id="2_hpbar"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_582ms"]
+radius = 12.0
+
+[node name="Bip" type="CharacterBody2D" unique_id=1527025703]
+script = ExtResource("1_bip")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=775942536]
+position = Vector2(0, -15)
+scale = Vector2(0.537037, 0.46875)
+texture = ExtResource("1_582ms")
+
+[node name="HurtBox" type="CollisionShape2D" parent="." unique_id=1919457226]
+position = Vector2(0, -14)
+shape = SubResource("CircleShape2D_582ms")
+debug_color = Color(0.9629546, 6.738305e-07, 0.5043789, 0.41960785)
+
+[node name="HPBar" type="Node2D" parent="." unique_id=1234567890]
+script = ExtResource("2_hpbar")

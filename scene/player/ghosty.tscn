@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://d3dg0yavn7oq4"]
+
+[ext_resource type="Script" uid="uid://bwgq3xajivxqv" path="res://scene/player/ghosty.gd" id="1_tr6j8"]
+[ext_resource type="Texture2D" uid="uid://bv0f7ktkegy6u" path="res://assets/player.png" id="1_x4d3c"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x4d3c"]
+radius = 23.0
+height = 56.0
+
+[node name="Ghosty" type="CharacterBody2D" unique_id=1566362811]
+script = ExtResource("1_tr6j8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=291769305]
+texture = ExtResource("1_x4d3c")
+
+[node name="ColisionBox" type="CollisionShape2D" parent="." unique_id=164134340]
+position = Vector2(1, -3)
+shape = SubResource("CapsuleShape2D_x4d3c")

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bscn7k48jhs4l"]
+
+[ext_resource type="PackedScene" uid="uid://d3dg0yavn7oq4" path="res://scene/player/ghosty.tscn" id="1_pjass"]
+[ext_resource type="PackedScene" uid="uid://8yfhpe6deeky" path="res://scene/enemy/bip.tscn" id="2_txmk2"]
+
+[node name="World" type="Node2D" unique_id=1008311652]
+
+[node name="Bip" parent="." unique_id=1527025703 instance=ExtResource("2_txmk2")]
+position = Vector2(698, 223)
+
+[node name="Ghosty" parent="." unique_id=1566362811 instance=ExtResource("1_pjass")]
+position = Vector2(505, 244)
