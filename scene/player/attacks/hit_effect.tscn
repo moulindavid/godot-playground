@@ -12,6 +12,7 @@ scale_max = 4.0
 color = Color(1, 0.4, 0.1, 1)
 
 [node name="HitEffect" type="GPUParticles2D" unique_id=91033690]
+light_mask = 9
 emitting = false
 amount = 10
 lifetime = 0.4
